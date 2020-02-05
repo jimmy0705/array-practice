@@ -117,3 +117,28 @@ reverse(0);
 reverse(-123);
 reverse(-898899666);
 reverse(898899666);
+
+
+//==========two sum ==========//
+
+var twoSum = function(nums, target) {
+    var x =[];
+    for(var i=0;i<nums.length;i++){
+        
+       for(var j =i+1;j<nums.length;j++){
+           if(nums[j]== target-nums[i]){
+               x.push(i);
+               x.push(j);
+           }
+           else{
+               
+           }
+       }
+    }
+    console.log(x);
+    
+};
+
+twoSum([2, 7, 11, 15],9);
+twoSum([2, 7, 11, 15,5],12);
+
