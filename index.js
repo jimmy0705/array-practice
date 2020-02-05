@@ -191,7 +191,25 @@ function checkPalindrome(inputString) {
 
 }
 
-checkPalindrome("ababa");
-checkPalindrome("ababaa");
+// checkPalindrome("ababa");
+// checkPalindrome("ababaa");
 
 /////////
+
+//==============century of the year =======//
+
+function centuryFromYear(year) {
+
+    if (year % 100 === 0){
+    console.log( year / 100);
+  }else {
+    
+      var x= (year/100) + 1;
+      console.log( Math.floor(x));
+  }
+
+
+}
+
+centuryFromYear(2020);
+centuryFromYear(1700)
