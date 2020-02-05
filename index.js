@@ -52,20 +52,68 @@ for(var i=0;i<x1.length;i++){
 
 
 //===================================================//
-//console.log(x3);
-
-// for(var i=0;i<x1.length;i++){
-//   // console.log(x3[i]);
-//    for(var j =0;j<x2.length;j++){
-//        if(x1[i]== x2.charAt(j)){
-//            arr.push(x2.charAt(j));
-//            x2.charAt(j).trim();
-//        }
-//        else{
-//             arr.push(x2.charAt(j));
-
-//        }
-      
-//    }
+var reverse = function(x) {
+    var revStr= x.toString().split("").reverse();
+    if(revStr.length == 1 && revStr[0]=="0"){
+        console.log(0);
+    }
+    else{
+        
+            var jj = revStr.length-1;
+    for(var i =0; i<revStr.length;i++){
+        if(revStr[jj]=="-"){
+            revStr.pop();
+            revStr.unshift("-")
+            
+        }
+     if(revStr[0]=="0"){
+            revStr.shift();
+                 
+                 }
+        else{
+            
+        }
+    }
+    
+    var str1= revStr.join("");
+    var num = parseInt(str1);
+        
+    var arr2=num.toString().split("");
+        var num2 = "";
+        var num3=0;
+  if(arr2[0]=="-"){
+    //console.log(arr2);
+      arr2.shift();
+      //console.log(arr2);
+      num2 = arr2.join("");
+      num3 = parseInt(num2);
+      if (num3 > 2**31){
+        var dd = 0;
+    }else{
+      var dd =num;
+    }
+    return dd;
+    console.log(dd);  
+  }
+        
+    
+    else if(num > 2**31){
+       // return 0;
+        console.log(0);
+    }
+    else{
+       // return num;
+        console.log(num);
+    }
+        
+    }
   
-// }
+
+    
+    
+    
+};
+reverse(0);
+reverse(-123);
+reverse(-898899666);
+reverse(898899666);
