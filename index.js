@@ -142,3 +142,37 @@ var twoSum = function(nums, target) {
 twoSum([2, 7, 11, 15],9);
 twoSum([2, 7, 11, 15,5],12);
 
+
+///
+
+//=====palindrome nummber============//
+
+var isPalindrome = function(x) {
+    
+    var arr1 = x.toString().split("");
+    //console.log(arr1);
+    
+    if(arr1[0]=="-"){
+        // return false;
+        console.log(false);
+      
+    }else{
+        var str2=arr1.reverse().join("");
+        if(x==str2){
+         console.log(true);
+        }
+        else{
+        console.log(false);
+
+        }
+       
+        
+        
+        
+    }
+    
+};
+isPalindrome(-121);
+isPalindrome(121);
+isPalindrome(123);
+
