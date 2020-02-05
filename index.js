@@ -211,5 +211,23 @@ function centuryFromYear(year) {
 
 }
 
-centuryFromYear(2020);
-centuryFromYear(1700)
+// centuryFromYear(2020);
+// centuryFromYear(1700)
+
+//=====================//==================//
+var arr2=[];
+var arr1 =["?","a","j","?"];
+console.log(arr1.length);
+
+for(var i =0;i<arr1.length;i++){
+   // console.log(arr1[i]);
+   if(arr1[i]=="?"){
+       //console.log("u");
+       arr2.push("u");
+   }
+   else{
+      // console.log(arr1[i]);
+       arr2.push(arr1[i]);
+   }
+   console.log(arr2);
+}
