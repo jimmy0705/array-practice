@@ -45,9 +45,9 @@ for(var i=0;i<x1.length;i++){
   // console.log(arr);
 }
 
-   console.log(arr);
-   var arrJoin=arr.join("");
-   console.log(arrJoin);
+  //  console.log(arr);
+  //  var arrJoin=arr.join("");
+  //  console.log(arrJoin);
 
 
 
@@ -113,10 +113,10 @@ var reverse = function(x) {
     
     
 };
-reverse(0);
-reverse(-123);
-reverse(-898899666);
-reverse(898899666);
+// reverse(0);
+// reverse(-123);
+// reverse(-898899666);
+// reverse(898899666);
 
 
 //==========two sum ==========//
@@ -139,8 +139,8 @@ var twoSum = function(nums, target) {
     
 };
 
-twoSum([2, 7, 11, 15],9);
-twoSum([2, 7, 11, 15,5],12);
+// twoSum([2, 7, 11, 15],9);
+// twoSum([2, 7, 11, 15,5],12);
 
 
 ///
@@ -172,7 +172,26 @@ var isPalindrome = function(x) {
     }
     
 };
-isPalindrome(-121);
-isPalindrome(121);
-isPalindrome(123);
+// isPalindrome(-121);
+// isPalindrome(121);
+// isPalindrome(123);
 
+//=====palindrome string======//
+
+function checkPalindrome(inputString) {
+    var arr = inputString.split("");
+    var revStr = arr.reverse().join("");
+   // return revArr;
+    
+    if(inputString === revStr){
+        //return true;
+        console.log(true);
+    }
+    else console.log(false);
+
+}
+
+checkPalindrome("ababa");
+checkPalindrome("ababaa");
+
+/////////
