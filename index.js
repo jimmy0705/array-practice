@@ -217,7 +217,7 @@ function centuryFromYear(year) {
 //=====================//==================//
 var arr2=[];
 var arr1 =["?","a","j","?"];
-console.log(arr1.length);
+//console.log(arr1.length);
 
 for(var i =0;i<arr1.length;i++){
    // console.log(arr1[i]);
@@ -229,5 +229,30 @@ for(var i =0;i<arr1.length;i++){
       // console.log(arr1[i]);
        arr2.push(arr1[i]);
    }
-   console.log(arr2);
+   //console.log(arr2);
 }
+
+///////////////////////
+var xyz = [1,2,3,4,5,7];
+
+var target = 1;
+
+
+
+
+function check(xyz,target){
+  
+    for (var i =0; i< xyz.length; i++){
+        if ( xyz[i+1]-xyz[i] === target) {
+          
+        
+        
+
+        console.log(xyz[i+1],xyz[i]);
+     
+             
+       }
+     }
+}
+
+check([1,2,3,4,5,7],1);
